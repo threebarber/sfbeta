@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Space Articles</title>
+
+        <script>
+            
+
+            
+            async function getData(url) {
+            const response = await fetch(url);
+
+            return response.json();
+            }
+
+            
+            async function testFunc(){
+                const data = await getData("https://api.spaceflightnewsapi.net/v3/articles");
+
+            console.log(data);
+
+            data.forEach(article => {
+                           
+                console.log(article["id"]);
+                console.log(article["title"]);
+            });
+
+            }
+
+
+            /*for (let key in article) {
+        console.log(`${article}: ${article[key]}`);
+    }*/
+            testFunc();
+
+            
+            </script>
+    </head>
+<body>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="scripts.js"></script> <!-- external scripts file with logic-->
+</body>
+</html>
