@@ -1,0 +1,17 @@
+.mainDiv{
+    height:700px;
+    border-radius:1rem;
+    display:flex;
+    border:red dashed;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+}
+
+
+.articleDiv{
+border:green solid;
+margin:30px;
+max-height:200px;
+width:200px;
+border-radius:1rem;
+}

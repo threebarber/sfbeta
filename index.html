@@ -11,62 +11,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Space Articles</title>
 
-    <script>
-
-
-
-        async function getData(url) {
-            const response = await fetch(url);
-
-            return response.json();
-        }
-
-
-        async function testFunc() {
-            const data = await getData("https://api.spaceflightnewsapi.net/v3/articles");
-
-            console.log(data);
-
-            data.forEach(article => {
-
-                console.log(article["id"]);
-                console.log(article["title"]);
-            });
-
-        }
-
-
-        /*for (let key in article) {
-    console.log(`${article}: ${article[key]}`);
-}*/
-        testFunc();
-
-
-    </script>
 </head>
+<script>
+</script>
 
 <body>
 
 
+<div class="mainDiv">
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</div>
 
 
     <script src="scripts.js"></script> <!-- external scripts file with logic-->
