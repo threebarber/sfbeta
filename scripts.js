@@ -33,6 +33,8 @@
                     articleDiv.appendChild(articleImage);
 
 
+                    var divider = document.createElement("hr");
+                    articleDiv.appendChild(divider);
 
 
                     var articleTitle = document.createElement("h3");
