@@ -21,6 +21,12 @@
                     var articleDiv = document.createElement("div");
                     articleDiv.classList.add("articleDiv");
 
+
+                    var articleImage = document.createElement("img");
+                    articleImage.src = article["imageUrl"];
+                    articleImage.classList.add("articleImg");
+                    articleDiv.appendChild(articleImage);
+
                     var articleTitle = document.createElement("h3");
                     articleTitle.innerText = article["title"];
                     articleDiv.appendChild(articleTitle);   

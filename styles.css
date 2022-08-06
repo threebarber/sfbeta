@@ -18,6 +18,14 @@ width:300px;
 border-radius:1rem;
 text-align:center;
 padding:20px;
+word-break:break-all;
+}
+
+
+.articleImg{
+    width:70%;
+    height:40%;
+    border-radius:1rem;
 }
 
 * {
