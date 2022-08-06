@@ -1,5 +1,7 @@
 .mainDiv{
+    margin:auto;
     height:700px;
+    max-width: 80%;
     border-radius:1rem;
     display:flex;
     border:red dashed;
@@ -14,4 +16,11 @@ margin:30px;
 max-height:200px;
 width:200px;
 border-radius:1rem;
+text-align:center;
+padding:20px;
 }
+
+* {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+  }

@@ -6,7 +6,7 @@
         }
 
 
-        function loopData(){
+        function loadArticles(){
             
             (async () => {
                 const data = await getData("https://api.spaceflightnewsapi.net/v3/articles")
@@ -44,4 +44,4 @@
 }*/
 
 
-loopData();
+loadArticles();
