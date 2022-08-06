@@ -23,7 +23,12 @@
 
                     var articleTitle = document.createElement("h3");
                     articleTitle.innerText = article["title"];
-                    articleDiv.appendChild(articleTitle);    
+                    articleDiv.appendChild(articleTitle);   
+                    
+                    
+                    var articleSum = document.createElement("p");
+                    articleSum.innerText = article["summary"];
+                    articleDiv.appendChild(articleSum);
 
 
                     var articleSec = document.querySelector(".mainDiv")

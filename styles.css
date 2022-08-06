@@ -1,6 +1,6 @@
 .mainDiv{
     margin:auto;
-    height:700px;
+    /*height:700px;*/
     max-width: 80%;
     border-radius:1rem;
     display:flex;
@@ -13,8 +13,8 @@
 .articleDiv{
 border:green solid;
 margin:30px;
-max-height:200px;
-width:200px;
+max-height:300px;
+width:300px;
 border-radius:1rem;
 text-align:center;
 padding:20px;
