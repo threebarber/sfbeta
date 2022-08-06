@@ -21,11 +21,19 @@
                     var articleDiv = document.createElement("div");
                     articleDiv.classList.add("articleDiv");
 
+                    articleDiv.onclick = function(){
+                        window.open(article["url"], '_blank').focus();
+
+                    }
+
 
                     var articleImage = document.createElement("img");
                     articleImage.src = article["imageUrl"];
                     articleImage.classList.add("articleImg");
                     articleDiv.appendChild(articleImage);
+
+
+
 
                     var articleTitle = document.createElement("h3");
                     articleTitle.innerText = article["title"];

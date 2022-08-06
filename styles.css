@@ -4,21 +4,29 @@
     max-width: 80%;
     border-radius:1rem;
     display:flex;
-    border:red dashed;
+    border: solid black;
     justify-content: space-evenly;
     flex-wrap:wrap;
 }
 
 
 .articleDiv{
-border:green solid;
+/*border:green solid;*/
 margin:30px;
-max-height:300px;
-width:300px;
+max-height:400px;
+width:320px;
 border-radius:1rem;
 text-align:center;
 padding:20px;
 word-break:break-all;
+cursor:pointer;
+box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.5);
+transition: all .2s ease-in-out; 
+
+}
+
+.articleDiv:hover{
+    transform: scale(0.9); 
 }
 
 
