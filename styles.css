@@ -1,6 +1,6 @@
 .titleDiv{
     margin:auto;
-    height:175px;
+    /*height:175px;*/
     max-width: 80%;
     border-radius:1rem;
     /*border: solid red;*/
@@ -50,13 +50,14 @@
     box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
 }
 
+
 .mainDiv{
     margin:auto;
     /*height:700px;*/
     max-width: 80%;
     border-radius:1rem;
     display:flex;
-    border: solid black;
+    /*border: solid black;*/
     justify-content: space-evenly;
     flex-wrap:wrap;
 }
@@ -86,11 +87,16 @@ transition: all .2s ease-in-out;
     width:70%;
     height:40%;
     border-radius:1rem;
-    border:solid gray;
-    border-width: .3rem;
+    /*border:solid gray;
+    border-width: .3rem;*/
 }
 
 * {
     font-family: 'Roboto', sans-serif;
     color: black;
   }
+
+
+
+
+  

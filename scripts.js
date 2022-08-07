@@ -17,6 +17,9 @@ async function getData(url) {
 
 function loadArticles() {
 
+    document.getElementById("newsButton").disabled = true;
+    document.getElementById("blogButton").disabled = false;
+
     document.querySelector(".mainDiv").innerHTML = "";
 
     (async () => {
@@ -71,6 +74,9 @@ function loadArticles() {
 
 
 function loadBlogs() {
+    document.getElementById("blogButton").disabled = true;
+    document.getElementById("newsButton").disabled = false;
+
 
     document.querySelector(".mainDiv").innerHTML = "";
 
