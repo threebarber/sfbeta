@@ -1,6 +1,6 @@
 .titleDiv{
     margin:auto;
-    height:250px;
+    height:175px;
     max-width: 80%;
     border-radius:1rem;
     /*border: solid red;*/
@@ -23,6 +23,32 @@
 }
 
 
+.menuDiv{
+    margin:auto;
+    /*height:700px;*/
+    width:350px;
+    border-radius:1rem;
+    display:flex;
+    /*border: solid yellow;*/
+    justify-content: space-evenly;
+    gap:50px;
+}
+
+
+.menuDiv button{
+    width:160px;
+    height:60px;
+    background-color: purple;
+    color: white;
+    margin:10px;
+    font-weight: bold;
+    border-radius:1rem;
+    font-size: 1.2rem;
+}
+
+.menuDiv button:hover {
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+}
 
 .mainDiv{
     margin:auto;
@@ -30,7 +56,7 @@
     max-width: 80%;
     border-radius:1rem;
     display:flex;
-    /*border: solid black;*/
+    border: solid black;
     justify-content: space-evenly;
     flex-wrap:wrap;
 }
@@ -61,6 +87,7 @@ transition: all .2s ease-in-out;
     height:40%;
     border-radius:1rem;
     border:solid gray;
+    border-width: .3rem;
 }
 
 * {
