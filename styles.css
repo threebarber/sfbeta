@@ -56,17 +56,25 @@
     /*height:700px;*/
     max-width: 80%;
     border-radius:1rem;
-    display:flex;
-    /*border: solid black;*/
-    justify-content: space-evenly;
-    flex-wrap:wrap;
+    display: grid;
+    justify-content: center;
+  grid-template-columns: 0.9fr 1.4fr 1.4fr;
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "Nav News Blogs"
+    ". . ."
+    ". . ."
+    ". . ."; 
+
 }
 
 
 .articleDiv{
 /*border:green solid;*/
-margin:30px;
-max-height:400px;
+margin:auto;
+margin-top: 30px;
+margin-bottom:30px;
+height:350px;
 width:320px;
 border-radius:1rem;
 text-align:center;
@@ -78,18 +86,58 @@ transition: all .2s ease-in-out;
 
 }
 
+.navContainer{
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+    position:fixed;
+}
+
+.navButton {
+    
+        background-color: white; /* Green */
+        border: solid black;
+        border-radius:1rem;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+}
+
 .articleDiv:hover{
     transform: scale(0.9); 
 }
 
 
 .articleImg{
-    width:70%;
-    height:40%;
+    width:200px;
+    height:165px;
     border-radius:1rem;
     /*border:solid gray;
     border-width: .3rem;*/
 }
+
+/* grid stuff */
+
+
+.news { grid-area: News; 
+    justify-self:center;
+    
+}
+
+.blogs { grid-area: Blogs; 
+    justify-self:center;
+
+}
+
+.nav { grid-area: Nav; 
+    
+    margin-top:100px;
+
+}
+
 
 * {
     font-family: 'Roboto', sans-serif;

@@ -1,11 +1,11 @@
-document.getElementById("newsButton").addEventListener("click", function(){
+/*document.getElementById("newsButton").addEventListener("click", function(){
     loadArticles();
  });
 
  document.getElementById("blogButton").addEventListener("click", function(){
     loadBlogs();
  });
-
+*/
 
 
 async function getData(url) {
@@ -17,10 +17,10 @@ async function getData(url) {
 
 function loadArticles() {
 
-    document.getElementById("newsButton").disabled = true;
-    document.getElementById("blogButton").disabled = false;
+    /*document.getElementById("newsButton").disabled = true;
+    document.getElementById("blogButton").disabled = false;*/
 
-    document.querySelector(".mainDiv").innerHTML = "";
+    /*document.querySelector(".mainDiv").innerHTML = "";*/
 
     (async () => {
         const data = await getData("https://api.spaceflightnewsapi.net/v3/articles")
@@ -34,6 +34,7 @@ function loadArticles() {
 
             var articleDiv = document.createElement("div");
             articleDiv.classList.add("articleDiv");
+            articleDiv.classList.add("news");
 
             articleDiv.onclick = function () {
                 window.open(article["url"], '_blank').focus();
@@ -51,7 +52,7 @@ function loadArticles() {
             articleDiv.appendChild(divider);
 
 
-            var articleTitle = document.createElement("h3");
+            var articleTitle = document.createElement("h4");
             articleTitle.innerText = article["title"];
             articleDiv.appendChild(articleTitle);
 
@@ -62,7 +63,7 @@ function loadArticles() {
             articleDiv.appendChild(articleSum);
 
 
-            var articleSec = document.querySelector(".mainDiv")
+            var articleSec = document.querySelector(".News")
 
             articleSec.appendChild(articleDiv);
         });
@@ -74,11 +75,11 @@ function loadArticles() {
 
 
 function loadBlogs() {
-    document.getElementById("blogButton").disabled = true;
-    document.getElementById("newsButton").disabled = false;
+    /*document.getElementById("blogButton").disabled = true;
+    document.getElementById("newsButton").disabled = false;*/
 
 
-    document.querySelector(".mainDiv").innerHTML = "";
+   /* document.querySelector(".mainDiv").innerHTML = "";*/
 
     (async () => {
         const data = await getData("https://api.spaceflightnewsapi.net/v3/blogs")
@@ -92,6 +93,7 @@ function loadBlogs() {
 
             var articleDiv = document.createElement("div");
             articleDiv.classList.add("articleDiv");
+            articleDiv.classList.add("blog");
 
             articleDiv.onclick = function () {
                 window.open(article["url"], '_blank').focus();
@@ -109,7 +111,7 @@ function loadBlogs() {
             articleDiv.appendChild(divider);
 
 
-            var articleTitle = document.createElement("h3");
+            var articleTitle = document.createElement("h4");
             articleTitle.innerText = article["title"];
             articleDiv.appendChild(articleTitle);
 
@@ -120,7 +122,7 @@ function loadBlogs() {
             articleDiv.appendChild(articleSum);
 
 
-            var articleSec = document.querySelector(".mainDiv")
+            var articleSec = document.querySelector(".Blogs")
 
             articleSec.appendChild(articleDiv);
         });
@@ -136,12 +138,15 @@ function shortenSummary(summaryText) {
 
     const wordCount = summaryText.split(' ').length;
 
-    let shortSummary = summaryText.split(' ').slice(0, wordCount * .75).join(' ') + "...";
+    let shortSummary = summaryText.split(' ').slice(0, wordCount * .80).join(' ') + "...";
 
     return shortSummary;
 
 }
 
+
+loadBlogs();
+loadArticles();
 /*for (let key in article) {
 console.log(`${article}: ${article[key]}`);
 }*/
