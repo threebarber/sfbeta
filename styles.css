@@ -1,17 +1,19 @@
-.titleDiv{
-    margin:auto;
+.titleDiv {
+    margin: auto;
     /*height:175px;*/
     max-width: 80%;
-    border-radius:1rem;
+    border-radius: 1rem;
     border: solid #363333;
     justify-content: center;
     align-items: center;
-    text-align:center;
+    text-align: center;
     vertical-align: middle;
-    display:flex;
+    display: flex;
 }
 
-.titleDiv h4, .titleDiv p, .titleDiv a{
+.titleDiv h4,
+.titleDiv p,
+.titleDiv a {
 
     font-weight: bold;
     color: white;
@@ -19,86 +21,103 @@
     /*background-color: black;*/
 }
 
-.mainDiv{
-    margin:auto;
+.mainDiv {
+    margin: auto;
     /*height:700px;*/
     max-width: 80%;
-    border-radius:1rem;
+    border-radius: 1rem;
     display: grid;
     justify-content: center;
-  grid-template-columns: 0.9fr 1.4fr 1.4fr;
-  gap: 0px 20px; 
-  grid-template-areas: 
-    "Nav News Blogs"
-    ". . ."
-    ". . ."
-    ". . ."; 
+    grid-template-columns: 0.9fr 1.4fr 1.4fr;
+    gap: 0px 20px;
+    grid-template-areas:
+        "Nav News Blogs"
+        ". . ."
+        ". . ."
+        ". . .";
 
 }
 
 
-.articleDiv{
-/*border:green solid;*/
-margin:auto;
-margin-top: 30px;
-margin-bottom:30px;
-height:350px;
-width:320px;
-border-radius:1rem;
-text-align:center;
-padding:20px;
-overflow-wrap: break-word;
-cursor:pointer;
-/*box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.5);*/
-transition: all .2s ease-in-out; 
-background-color: lightgray;
+.articleDiv {
+    /*border:green solid;*/
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 350px;
+    width: 320px;
+    border-radius: 1rem;
+    text-align: center;
+    padding: 20px;
+    overflow-wrap: break-word;
+    cursor: pointer;
+    /*box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.5);*/
+    transition: all .2s ease-in-out;
+    background-color: lightgray;
+    animation: append-animate .3s linear;
+
 }
 
-.navContainer{
-    display:flex;
+
+@keyframes append-animate {
+	from {
+		transform: scale(0);
+		opacity: 0;
+	}
+	to {
+		transform: scale(1);
+		opacity: 1;	
+	}
+}
+
+
+.navContainer {
+    display: flex;
     flex-direction: column;
-    gap:30px;
-    position:fixed;
+    gap: 30px;
+    position: fixed;
     justify-content: center;
-    
+
 }
 
 .navHeader {
-    text-align:center;
-    padding:20px;
-    border-radius:1rem;
-    background-color:lightgray;
+    text-align: center;
+    padding: 20px;
+    border-radius: 1rem;
+    background-color: lightgray;
 }
 
 .left {
-    text-align:left;
+    text-align: left;
 }
 
 .navButton {
-    
-        background-color: lightgray; /* Green */
-        border: solid black;
-        border-radius:1rem;
-        color: black;
-        padding: 15px 32px;
-        text-decoration: none;
-        font-size: 16px;
-        justify-self:center;
+
+    background-color: lightgray;
+    /* Green */
+    border: solid black;
+    border-radius: 1rem;
+    color: black;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    justify-self: center;
 }
 
 .navButton:hover {
-    background-color:white; /* Green */
-  }
+    background-color: white;
+    /* Green */
+}
 
-.articleDiv:hover{
-    transform: scale(0.9); 
+.articleDiv:hover {
+    transform: scale(0.9);
 }
 
 
-.articleImg{
-    width:200px;
-    height:120px;
-    border-radius:1rem;
+.articleImg {
+    width: 200px;
+    height: 120px;
+    border-radius: 1rem;
     /*border:solid gray;
     border-width: .3rem;*/
 }
@@ -106,20 +125,23 @@ background-color: lightgray;
 /* grid stuff */
 
 
-.news { grid-area: News; 
-    justify-self:center;
-    
-}
-
-.blogs { grid-area: Blogs; 
-    justify-self:center;
+.news {
+    grid-area: News;
+    justify-self: center;
 
 }
 
-.nav { grid-area: Nav; 
-    
-    margin-top:100px;
-    justify-self:center;
+.blogs {
+    grid-area: Blogs;
+    justify-self: center;
+
+}
+
+.nav {
+    grid-area: Nav;
+
+    margin-top: 100px;
+    justify-self: center;
 
 }
 
@@ -127,16 +149,18 @@ background-color: lightgray;
 * {
     font-family: 'Roboto', sans-serif;
     color: black;
-  }
+}
 
 
 html {
-    background: #000000;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-    
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
 
 }
-
-  
