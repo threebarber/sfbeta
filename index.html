@@ -20,10 +20,7 @@
 
 <body>
 
-    
-
-    
-    <div class="titleDiv">
+    <div class="titleDiv" id="topTitle">
 
         <h4>Space news - brought to you using the <a href="https://api.spaceflightnewsapi.net/v3/documentation">SpaceFlight News API</a></h4>
 
@@ -35,11 +32,11 @@
 
             <div class="navContainer">
 
-                <div><button class="navButton">Favorites</button></div>
-                <div><button class="navButton">Latest</button></div>
-                <div><button class="navButton">Hot</button></div>
-                <div><button class="navButton">More</button></div>
-                <div><button class="navButton">Back to Top</button></div>
+                <div><button type="button" class="navButton">Favorites</button></div>
+                <div><button type="button" class="navButton">Latest</button></div>
+                <div><button type="button" class="navButton">Hot</button></div>
+                <div><button type="button" class="navButton">More</button></div>
+                <div><button onClick="document.getElementById('topTitle').scrollIntoView();" type="button" class="navButton">Back to Top</button></div>
 
             </div>
         </div>

@@ -76,7 +76,7 @@ background-color: lightgray;
 
 .navButton {
     
-        background-color: white; /* Green */
+        background-color: lightgray; /* Green */
         border: solid black;
         border-radius:1rem;
         color: black;
@@ -85,6 +85,10 @@ background-color: lightgray;
         font-size: 16px;
         justify-self:center;
 }
+
+.navButton:hover {
+    background-color:white; /* Green */
+  }
 
 .articleDiv:hover{
     transform: scale(0.9); 
