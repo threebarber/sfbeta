@@ -79,7 +79,7 @@ function loadBlogs() {
     document.getElementById("newsButton").disabled = false;*/
 
 
-   /* document.querySelector(".mainDiv").innerHTML = "";*/
+    /* document.querySelector(".mainDiv").innerHTML = "";*/
 
     (async () => {
         const data = await getData("https://api.spaceflightnewsapi.net/v3/blogs")
@@ -138,9 +138,15 @@ function shortenSummary(summaryText) {
 
     const wordCount = summaryText.split(' ').length;
 
-    let shortSummary = summaryText.split(' ').slice(0, wordCount * .80).join(' ') + "...";
+    if (wordCount >= 60){
 
-    return shortSummary;
+        let shortSummary = summaryText.split(' ').slice(0, wordCount * .60).join(' ') + "...";
+        return shortSummary;
+    }
+    else{
+        let shortSummary = summaryText.split(' ').slice(0, wordCount * .80).join(' ') + "...";
+        return shortSummary;
+    }
 
 }
 
